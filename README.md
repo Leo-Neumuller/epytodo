@@ -47,7 +47,31 @@ Yannis Alouache
 
 /register POST : register a new user
 
+```
+{
+
+" email ": " value " ,
+
+" name ": " value " ,
+
+" firstname ": " value " ,
+
+" password ": " value "
+
+}
+```
+
 /login POST : connect a user
+
+```
+{
+
+" email " : " username " ,
+
+" password " : " password "
+
+}
+```
 
 /user GET : view all user informations
 
@@ -57,6 +81,21 @@ Yannis Alouache
 
 /user/:id PUT : update user information
 
+```
+{
+
+" email " : " updated_email@test . eu " ,
+
+" password " : " updated_passord " ,
+
+" firstname " : " updated_test " ,
+
+" name " : " updated_test "
+
+}
+```
+
+
 /user/:id DELETE : delete user
 
 /todo GET : view all the todos
@@ -65,6 +104,38 @@ Yannis Alouache
 
 /todo POST : create a todo
 
+```
+{
+
+" title " : " title " ,
+
+" description " : " desc " ,
+
+" due_time " : "2021 -03 -06 19:24:00" ,
+
+" user_id " : "3" ,
+
+" status " : " todo "
+
+}
+```
+
 /todo/:id PUT : update a todo
+
+```
+{
+
+" title " : " Updated title " ,
+
+" description " : " Updated desc " ,
+
+" due_time " : "2021 -03 -07 19:24:00" ,
+
+" user_id " : "1" ,
+
+" status " : " doing "
+
+}
+```
 
 /todo/:id DELETE : delete a todo
